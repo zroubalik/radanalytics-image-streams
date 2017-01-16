@@ -1,0 +1,42 @@
+{
+    "kind": "List",
+    "apiVersion": "v1",
+    "metadata": {
+        "name": "radanalytics-image-streams",
+        "annotations": {
+            "description": "ImageStream definitions for RADAnalytics Spark images"
+        }
+    },
+    "items": [
+        {
+            "kind": "ImageStream",
+            "apiVersion": "v1",
+            "metadata": {
+                "name": "radanalytics-java-spark"
+            },
+            "spec": {
+                "dockerImageRepository": "radanalyticsio/radanalytics-java-spark",
+                "tags": [
+                    {
+                        "name": "latest"
+                    }
+                ]
+            }
+        }
+        {
+            "kind": "ImageStream",
+            "apiVersion": "v1",
+            "metadata": {
+                "name": "radanalytics-pyspark"
+            },
+            "spec": {
+                "dockerImageRepository": "radanalyticsio/radanalytics-pyspark",
+                "tags": [
+                    {
+                        "name": "latest"
+                    }
+                ]
+            }
+        }
+    ]
+}
